@@ -1,0 +1,11 @@
+@startuml
+actor Robot as r
+r .> (move)
+r ..> (clean)
+actor Camera as c
+c .> (scan)
+c ..> (robotDirection)
+c ...> (sendLocation)
+c ....> (callRobot)
+c .....> (sendRobot)
+@enduml
