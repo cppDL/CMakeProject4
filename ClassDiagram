@@ -1,0 +1,28 @@
+@startuml
+
+"bot control" o-- camera #line:green;line.bold;text:green
+robot o-- "bot control" #line:green;line.bold;text:green
+
+
+class "camera"
+{
+grid
+}
+
+class "robot"
+{
+int x
+int y
+}
+
+class "bot control"
+{
+forward(int t)
+stop()=0
+left(int t)
+right(int t)
+clean
+}
+
+
+@enduml
