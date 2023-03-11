@@ -1,0 +1,7 @@
+project ("RobotCleaner")
+
+set(SOURCE_EXE main.cpp)
+
+add_library(RobotCleaner STATIC ${SOURCE_LIB})
+add_executable(main ${SOURCE_EXE})
+target_link_libraries(main CMakeRobot)
